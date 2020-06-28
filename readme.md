@@ -1,5 +1,4 @@
-This repo logs realsense depth camera computer vision development.
-
+This repo logs realsense development and examples 
 ## Install guide (without source)
 
 check out here ----> [Installation](https://github.com/devshank3/Intel_Realsense_CV/blob/master/installation.md)
@@ -9,6 +8,9 @@ check out here ----> [Installation](https://github.com/devshank3/Intel_Realsense
 </p>
 <p align="center">
 <img src="readme_data/color_d_slider.gif" width="380" /><img src="readme_data/depthslider.gif" width="380" />
+</p>
+<p align="center">
+ <img src="readme_data/bgcompo.gif" width="480" />
 </p>
 
 ### Resources 
