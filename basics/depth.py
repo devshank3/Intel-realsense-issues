@@ -16,7 +16,10 @@ try:
         depth_colormap = cv2.applyColorMap(cv2.convertScaleAbs(depth_image, alpha=0.08), cv2.COLORMAP_JET)
         cv2.namedWindow('RealSense_Depth', cv2.WINDOW_AUTOSIZE)
         cv2.imshow('RealSense_Depth', depth_colormap)
-        cv2.waitKey(1)
+        key = cv2.waitKey(1)
+        if key & 0xFF == ord('q') or key == 27:
+            cv2.destroyAllWindows()
+            break
 finally:
     pipeline.stop()
 
