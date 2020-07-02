@@ -40,7 +40,7 @@ try:
         cv2.imshow("Color", color_image)
         cv2.imshow("Depth Colormap", depth_colormap)
         key = cv2.waitKey(1)
-        if key == 27:
+        if key == 27 or key & 0xFF == ord('q'):
             break
         print('Done 1 Frame! Time: {0:0.3f}ms & FPS: {1:0.2f}'.format(
             (time.time()-time1)*1000,
@@ -49,4 +49,4 @@ try:
 
 finally:
     pipeline.stop()
-    cv2.destroyAllWindows
+    cv2.destroyAllWindows()
