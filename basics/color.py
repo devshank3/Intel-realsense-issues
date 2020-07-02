@@ -15,7 +15,12 @@ try:
         color_image = np.asanyarray(color_frame.get_data())
         cv2.namedWindow('RealSense_Color', cv2.WINDOW_AUTOSIZE)
         cv2.imshow('RealSense_Color', color_image)
-        cv2.waitKey(1)
+        key = cv2.waitKey(1)
+        if key & 0xFF == ord('q') or key == 27:
+            cv2.destroyAllWindows()
+            break
 finally:
     pipeline.stop()
+
+
 
