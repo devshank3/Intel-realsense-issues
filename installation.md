@@ -1,7 +1,6 @@
 Getting Started with Python - pyrealsense2
 
 ## Installation 
----
 - Installation without building from source
 
 1. Unplug any connected Intel RealSense camera
